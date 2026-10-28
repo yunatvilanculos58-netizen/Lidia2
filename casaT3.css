@@ -1,0 +1,218 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color:#333;
+    background-color: #dbe4f5 dad7d7;
+}
+
+
+/* BANNER */
+
+.banner {
+    height: 400px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("casaT3.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+
+/* MENU */
+
+nav {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #d45abf;
+}
+
+
+
+.menu {
+    list-style: none;
+
+    display: flex;
+    gap: 35px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #d45abf;
+}
+
+
+/* CONTEÚDO DO BANNER */
+
+.banner-conteudo {
+    height: calc(100% - 80px);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center ;
+
+    text-align: left;
+}
+
+
+.banner-conteudo h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+
+.banner-conteudo p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+/* DESCRIÇÃO DA CASA */
+
+.descricao-casa {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 30px;
+    color: #333;
+}
+
+.descricao-casa h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.descricao-casa h3 {
+    font-size: 22px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    color: #b44aa5;
+}
+
+.introducao {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* CARACTERÍSTICAS */
+
+.caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.caracteristicas p {
+    background-color: #c9b8b8;
+    padding: 18px;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.caracteristicas strong {
+    color: #b44aa5;
+}
+
+
+/* TEXTO DA DESCRIÇÃO */
+
+.descricao-casa > p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+/* CONTACTO */
+
+.contacto-casa {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #c9b8b8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contacto-casa h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.contacto-casa p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contacto-casa a {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #b44aa5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.contacto-casa a:hover {
+    background-color: #963a89;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 700px) {
+
+    .descricao-casa {
+        padding: 0 20px;
+    }
+
+    .caracteristicas {
+        grid-template-columns: 1fr;
+    }
+
+    .descricao-casa h2 {
+        font-size: 27px;
+    }
+} 

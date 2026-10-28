@@ -1,0 +1,267 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dbe4f5;
+    color: #333;
+}
+
+
+/* BANNER */
+
+.banner {
+    height: 500px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("Why\ Accurate\ Property\ Valuations\ Matter\ for\ Ad\ Valorem\ Tax\ Liability.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+
+/* MENU */
+
+nav {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #d45abf;
+}
+
+
+
+.menu {
+    list-style: none;
+
+    display: flex;
+    gap: 35px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #d45abf;
+}
+
+
+/* CONTEÚDO DO BANNER */
+
+.banner-conteudo {
+    height: calc(100% - 80px);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.banner-conteudo h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+
+.banner-conteudo p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+
+
+/* MENU DA PÁGINA */
+
+.topo {
+    height: 80px;
+    background-color: rgb(211, 210, 210);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.topo .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.topo .logo span {
+    color: #b44aa5;
+}
+
+.topo .menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.topo .menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.contacto > h1 {
+    text-align: center;
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contacto > p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+
+/* CONTEÚDO */
+
+.contacto-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+
+/* FORMULÁRIO */
+
+.formulario,
+.dados-contacto {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.formulario h2,
+.dados-contacto h2 {
+    margin-bottom: 25px;
+    color: #302e2e;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    margin-bottom: 18px;
+
+    border: 1px solid #ddd;
+    border-radius: 6px;
+
+    font-family: Arial;
+}
+
+.formulario button {
+    padding: 13px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #b44aa5;
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* DADOS */
+
+.dados-contacto p {
+    margin-bottom: 25px;
+    line-height: 1.7;
+    color: #666;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #29243d;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 60px;
+}
+
+
+/* TELEMÓVEL */
+
+@media (max-width: 700px) {
+
+    .contacto-container {
+        grid-template-columns: 1fr;
+    }
+
+    .topo {
+        padding: 0 20px;
+    }
+
+    .topo .menu {
+        gap: 12px;
+    }
+}
