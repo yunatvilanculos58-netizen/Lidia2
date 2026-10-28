@@ -264,3 +264,231 @@ nav {
         font-size: 27px;
     }
 }
+/* UNIFORMIZAR A TIPOGRAFIA DA PÁGINA SOBRE NÓS */
+
+.banner-sobre,
+.sobre-nos,
+.missao-visao,
+.chamada-sobre {
+    font-family: Arial, sans-serif;
+}
+
+.conteudo-sobre h1 {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.conteudo-sobre p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.texto-sobre h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.texto-sobre p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.7;
+}
+
+.caixa-info h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.caixa-info p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.chamada-sobre h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.chamada-sobre p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Ajustes para telemóveis */
+@media (max-width: 700px) {
+    .conteudo-sobre h1 {
+        font-size: 32px;
+    }
+
+    .conteudo-sobre p {
+        font-size: 16px;
+    }
+
+    .texto-sobre h2,
+    .chamada-sobre h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .banner-sobre {
+        height: 450px;
+    }
+
+    .conteudo-sobre h1 {
+        font-size: 34px;
+    }
+
+    .conteudo-sobre p {
+        font-size: 16px;
+    }
+}
+
+.conteudo-sobre {
+    max-width: 750px;
+}
+
+.conteudo-sobre h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.conteudo-sobre p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* QUEM SOMOS */
+.sobre-nos {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+.texto-sobre h2 {
+    color: #b44aa5;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.texto-sobre p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* MISSÃO, VISÃO E VALORES */
+.missao-visao {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    padding: 0 30px;
+}
+
+.caixa-info {
+    background-color: #f8eef7;
+    padding: 30px 25px;
+    border-radius: 10px;
+    border-bottom: 4px solid #b44aa5;
+}
+
+.caixa-info h3 {
+    color: #b44aa5;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.caixa-info p {
+    color: #555;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* CHAMADA FINAL */
+.chamada-sobre {
+    background-color: #f8eef7;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.chamada-sobre h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.chamada-sobre p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.chamada-sobre .botao {
+    display: inline-block;
+    background-color: #b44aa5;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.chamada-sobre .botao:hover {
+    background-color: #963a89;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #29243d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 700px) {
+    .topo {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .topo .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .banner-sobre {
+        min-height: 280px;
+    }
+
+    .conteudo-sobre h1 {
+        font-size: 34px;
+    }
+
+    .conteudo-sobre p {
+        font-size: 16px;
+    }
+
+    .sobre-nos {
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .missao-visao {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .chamada-sobre h2 {
+        font-size: 24px;
+    }
+}
+
